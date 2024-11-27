@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Archivo+Black&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Tiny5&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    float: left;
+    width: 100%;
+    position:fixed;
+    overflow: auto;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    border: 0.1px solid#0000001c;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+}
+
+nav li a{
+    color:black;
+    padding: 25px 30px ;
+    text-decoration: none;
+    
+}nav a{
+    display: block;
+}
+
+nav li a:hover{
+    color: white;
+    background-color:#003B46;
+    border-radius:15px;
+}
