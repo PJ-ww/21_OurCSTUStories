@@ -1,14 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Archivo+Black&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Tiny5&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Archivo+Black&family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Tiny5&display=swap');
 * {
     margin: 0;
     padding: 0;
 }
 
 nav {
-    float: left;
-    width: 100%;
-    position:fixed;
-    overflow: auto;
+    
     font-family: "Nunito Sans", sans-serif;
     font-size: 16px;
     border: 0.1px solid#0000001c;
@@ -33,4 +31,17 @@ nav li a:hover{
     color: white;
     background-color:#003B46;
     border-radius:15px;
+}
+
+header{
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 35px;
+    text-shadow: 2px 2px 8px rgb(173, 173, 173);
+    text-align: center;
+    padding:100px;
+    background-image: url(resources/IMG_9301.jpg) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: block;
+    background-position: center; 
 }
