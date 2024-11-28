@@ -6,7 +6,6 @@
 }
 
 nav {
-    
     font-family: "Nunito Sans", sans-serif;
     font-size: 16px;
     border: 0.1px solid#0000001c;
@@ -29,7 +28,7 @@ nav li a{
 
 nav li a:hover{
     color: white;
-    background-color:#003B46;
+    background-color:#78B3CE;
     border-radius:15px;
 }
 
@@ -44,4 +43,49 @@ header{
     background-size:cover;
     display: block;
     background-position: center; 
+}
+
+form{
+    padding: 40px;
+    margin: auto;
+    line-height: 2.4;
+    font-family: "Nunito Sans", sans-serif;
+    align-items: center;
+}
+
+legend{
+    padding: 15px 30px;
+    background-color: #78B3CE;
+    color: white;
+    border-radius: 10px;
+}
+
+fieldset{
+    border: none;
+    margin: auto;
+    width: 0px;
+    align-items: center;
+}
+
+label b{
+    color: red;
+}
+
+input[type="submit"]{
+    background-color: #78B3CE;
+    color: white;
+    border: 1px solid rgba(28, 129, 184, 0.363);
+    padding: 10px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+}
+
+input[type="radio"]{
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
 }

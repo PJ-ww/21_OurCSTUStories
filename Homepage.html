@@ -17,7 +17,64 @@
 
     <header>
         <b>Our CSTU Stories</b> 
-    </header>
+    </header><br>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend><br>
+            <div>
+                <label for="name">ชื่อ - สกุล: <b>*</b></label><br>
+                <input type="text" id="name" name="name" size="45px" placeholder="Enter your fullname" required><br><br>
+                
+                <label for="email">Email: <b>*</b></label><br>
+                <input type="email" name="email" id="email" size="45px" placeholder="Enter your email" required><br><br>
+                
+                <label for="id">รหัสนักศึกษา: <b>*</b></label><br>
+                <input type="password" id="id" name="id" size="45px" placeholder="Enter your student id" required><br><br>
+
+                <label for="gender">เพศ : <b>*</b></label><br>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">ผู้ชาย</label><br>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">ผู้หญิง</label><br><br>
+
+                <label for="faculty">คณะ: </label>
+                <select name="faculty" id="faculty" required>
+                    <option value="โปรดระบุ">โปรดระบุ</option>
+                    <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
+                    <option value="คณะพาณิชยศาสตร์และการบัญชี">คณะพาณิชยศาสตร์และการบัญชี</option>
+                    <option value="คณะรัฐศาสตร์">คณะรัฐศาสตร์</option>
+                    <option value="คณะเศรษฐศาสตร์">คณะเศรษฐศาสตร์</option>
+                    <option value="คณะสังคมสงเคราะห์ศาสตร์">คณะสังคมสงเคราะห์ศาสตร์</option>
+                    <option value="คณะศิลปศาสตร์">คณะศิลปศาสตร์</option>
+                    <option value="คณะวารสารศาสตร์และสื่อสารมวลชน">คณะวารสารศาสตร์และสื่อสารมวลชน</option>
+                    <option value="คณะสังคมวิทยาและมานุษยวิทยา">คณะสังคมวิทยาและมานุษยวิทยา</option>
+                    <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                    <option value="คณะวิศวกรรมศาสตร์">คณะวิศวกรรมศาสตร์</option>
+                    <option value="คณะแพทยศาสตร์">คณะแพทยศาสตร์</option>
+                    <option value="คณะสหเวชศาสตร์">คณะสหเวชศาสตร์</option>
+                    <option value="คณะทันตแพทยศาสตร์">คณะทันตแพทยศาสตร์</option>
+                    <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+                    <option value="คณะศิลปกรรมศาสตร์">คณะศิลปกรรมศาสตร์</option>
+                    <option value="คณะสถาปัตยกรรมศาสตร์และการผังเมือง">คณะสถาปัตยกรรมศาสตร์และการผังเมือง</option>
+                    <option value="คณะสาธารณสุขศาสตร์">คณะสาธารณสุขศาสตร์</option>
+                    <option value="คณะเภสัชศาสตร์">คณะเภสัชศาสตร์</option>
+                    <option value="คณะวิทยาการเรียนรู้และศึกษาศาสตร์">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
+                    <option value="สถาบันเทคโนโลยีนานาชาติสิรินธร">สถาบันเทคโนโลยีนานาชาติสิรินธร</option>
+                    <option value="วิทยาลัยนวัตกรรม">วิทยาลัยนวัตกรรม</option>
+                    <option value="วิทยาลัยสหวิทยาการ">วิทยาลัยสหวิทยาการ</option>
+                    <option value="วิทยาลัยนานาชาติปรีดีพนมยงค์">วิทยาลัยนานาชาติปรีดีพนมยงค์</option>
+                    <option value="วิทยาลัยโลกคดีศึกษา">วิทยาลัยโลกคดีศึกษา</option>
+                    <option value="วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์">วิทยาลัยแพทยศาสตร์นานาชาติจุฬาภรณ์</option>
+                    <option value="วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์</option>
+                </select>
+                <label><b>*</b></label><br><br>
+
+                <input type="submit" value="Submit"><br>
+            </div>
+        
+        </fieldset>
+    </form>  
     
 </body>
 </html>
