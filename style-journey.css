@@ -64,8 +64,8 @@ footer{
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* ให้เป็นแบบ2 คอลัมน์ */
+    gap: 20px; /* ระยะห่างระหว่างกล่อง */
 }
 
 .card {
@@ -95,4 +95,11 @@ footer{
     font-size: 0.9rem;
     color: #555;
     line-height: 1.5;
+}
+
+/* ส่วนนี้ทำให้กล่องแสดงผลแบบ Responsive */
+@media (max-width: 768px) {
+    .card-grid {
+        grid-template-columns: 1fr; /* บนจอคอม แสดงเป็น 2*2 บนโทรศัพท์แสดง 1 คอลัมน์ */
+    }
 }
