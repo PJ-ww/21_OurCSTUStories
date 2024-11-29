@@ -106,6 +106,12 @@ footer{
     font-family: "Noto Sans Thai Looped", serif;;
 }
 
+.image-placeholder img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
 /* ส่วนนี้ทำให้กล่องแสดงผลแบบ Responsive */
 @media (max-width: 768px) {
     .card-grid {
