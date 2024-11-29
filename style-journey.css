@@ -61,3 +61,38 @@ footer{
     border: 1px solid black ;
     background-color: #F6EFBD;
 }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
