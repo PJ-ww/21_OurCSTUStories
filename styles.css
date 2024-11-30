@@ -117,23 +117,57 @@ main{
 .members-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px; /* ระยะห่างระหว่างกล่อง */
+    gap: 30px; 
     justify-items: center;
 }
 
 .member {
     text-align: center;
-    background: #ffffff; /* พื้นขาว */
+    background: #ffffff; 
     border-radius: 12px;
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 90%;
-    max-width: 280px; /* ขนาดกล่องกระชับ */
+    max-width: 280px; 
 }
 
 .member:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.member img {
+    width: 120px; 
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px; 
+    margin-bottom: 15px;
+    border: 4px solid #82c4c3; 
+}
+
+.member p {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #4f4f4f; 
+    margin: 0;
+    line-height: 1.6;
+}
+
+.member p.name {
+    font-size: 16px; 
+    font-weight: bold;
+    color: #005f6b; 
+}
+
+.member p.role {
+    font-size: 14px;
+    color: #00778b; 
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .members-container {
+        grid-template-columns: 1fr; 
+    }
 }
 
