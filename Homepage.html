@@ -34,13 +34,16 @@
                 
                 <label for="id">รหัสนักศึกษา: <b>*</b></label><br>
                 <input type="password" id="id" name="id" size="45px" placeholder="Enter your student id" required><br><br>
-
+    
                 <label for="gender">เพศ : <b>*</b></label><br>
                 <input type="radio" id="male" name="gender" value="male" required>
                 <label for="male">ผู้ชาย</label><br>
                 <input type="radio" id="female" name="gender" value="female" required>
-                <label for="female">ผู้หญิง</label><br><br>
-
+                <label for="female">ผู้หญิง</label><br>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">อื่นๆ:</label>
+                <input type="text" id="other_gender" name="other_gender" placeholder="โปรดระบุ" disabled><br><br>
+    
                 <label for="faculty">คณะ: </label>
                 <select name="faculty" id="faculty" required>
                     <option value="โปรดระบุ">โปรดระบุ</option>
@@ -72,12 +75,19 @@
                     <option value="วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์</option>
                 </select>
                 <label><b>*</b></label><br><br>
-
+    
                 <input type="submit" value="Submit"><br>
             </div>
-        
         </fieldset>
-    </form>  
+    </form>
+    <script>
+        const otherRadio = document.getElementById('other');
+        const otherGenderInput = document.getElementById('other_gender');
+    
+        otherRadio.addEventListener('change', () => {
+            otherGenderInput.disabled = !otherRadio.checked;
+        });
+    </script>
 
     <div id="members">
         <h2>Members</h2>
