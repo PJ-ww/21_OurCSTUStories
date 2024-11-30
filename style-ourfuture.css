@@ -8,41 +8,38 @@ body {
 .header{
     display: flex;
     background-color: #b0d7e5;
-    padding:2px;
+    padding:7px;
 }
 
 
 .box a{
     text-decoration: none;
     color: black;
-    padding: 5px;
-    display: block;
     font-size: 16px;
     display: flex;
     margin: 2.5px;
     text-align: center;
     padding: 20px;
     background-color: #E6F1F6; 
-    border-radius: 9px;
+    border-radius: 10px;
     font-weight: bold;
 }
 
 .box a:hover{
     color: white;
-    background-color: #003B46;
+    background-color: #3d546d;
     border-radius: 16px;
     
 }
 
 
 .image-box {
-    background-color: #FFA474; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 230px;
-    font-weight: bold;
-    color: white;
+    padding:150px;
+    background-image: url(resources/IMG_9301.jpg) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    display: block;
+    background-position: center; 
 }
 
 .home{
@@ -73,29 +70,25 @@ span{
 }
 /**/
 .backhome{
-    display: flex;
-    margin: 2.5px;
+    
     text-align: center;
-    padding: 20px;
-    background-color: #E6F1F6; 
     border-radius: 9px;
     font-weight: bold;
+    justify-content: center;
     
 }
+
 
 .backhome a{
     text-decoration: none;
     color: black;
-    padding: 5px;
-    display: block;
     font-size: 16px;
-    display: flex;
     justify-content: center;
     display: flex;
     margin: 2.5px;
     text-align: center;
-    padding: 20px;
-    background-color: #E6F1F6; 
+    padding:20px;
+    background-color: #b0d7e5; 
     border-radius: 9px;
     font-weight: bold;
     
@@ -103,7 +96,7 @@ span{
 
 .backhome a:hover{
     color: white;
-    background-color: #003B46;
+    background-color: #f59b6a;
     border-radius: 16px;
 
     
