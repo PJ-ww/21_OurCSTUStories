@@ -98,3 +98,19 @@ input[type="checkbox"]{
 main{
     padding: 20px;
 }
+#members {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #eef6f7; 
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+#members h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 28px;
+    color: #00778b; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
