@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&family=Parkinsans:wght@300..800&display=swap');
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Parkinsans", serif;
     background-color: #F8F8F8;
 }
 
@@ -36,12 +37,25 @@ body {
 
 
 .image-box {
-    background-image: url(resources/IMG_9301.jpg);
+    padding:100px;
+    background-image: url(resources/IMG_9301.jpg) ;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;
     font-size: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 230px;
+    height: 200px;
+    font-weight: bold;
+    color: rgb(28, 27, 27);
+}
+
+.main-content h1{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-weight: bold;
     color: rgb(28, 27, 27);
 }
@@ -126,19 +140,15 @@ span {
     
 }
 
-.image-box h1 span{
-
+.main-content h1 span{
     transition: 0.5s;
-
 }
 
-.image-box h1:hover span:nth-child(1){
-
+.main-content h1:hover span:nth-child(1){
     margin-left: 40px;
-    
 }
 
-.image-box h1:hover span{
+.main-content h1:hover span{
     color: #f15a09;
     text-shadow: 0 0 10px #f3b08b,
     0 0 20px #f3b08b,
