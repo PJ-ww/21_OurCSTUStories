@@ -239,3 +239,18 @@ span {
     border-radius: 8px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 768px) {
+    .team-section  {
+        grid-template-columns: 1fr; 
+    }
+    .image-box{
+        padding:100px;
+        background-image: url(resources/IMG_9301.jpg) ;
+        background-repeat:no-repeat;
+        background-size:cover;
+        display: block;
+        background-position: center;
+        height: 80px; 
+    }
+}
