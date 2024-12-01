@@ -43,21 +43,6 @@ header{
     background-position: center; 
 }
 
-.title{
-    font-family: "Merriweather Sans", sans-serif;
-    font-size: 35px;
-    text-shadow: 2px 2px 8px rgb(173, 173, 173);
-    text-align: center;
-}
-
-form{
-    padding: 40px;
-    margin: auto;
-    line-height: 2.4;
-    font-family: "Nunito Sans", sans-serif;
-    align-items: center;
-}
-
 legend{
     padding: 15px 30px;
     background-color: #78B3CE;
@@ -171,3 +156,115 @@ main{
     }
 }
 
+form {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    width: 100%;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 100%; /* ให้กล่องมีความกว้างเต็มพื้นที่ที่มีอยู่ */
+    padding: 8px; /* เพิ่มระยะห่างภายในกล่อง */
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างกล่อง */
+    box-sizing: border-box; /* รวมขนาด padding เข้าในขนาดรวม */
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* ปรับให้ปุ่มกดเต็มความกว้าง */
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+nav ul {
+    background-color: #333;
+    overflow: hidden;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
