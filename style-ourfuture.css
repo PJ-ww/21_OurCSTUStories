@@ -167,18 +167,17 @@ span {
 
 .member {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
+    justify-content: center; 
     align-items: center; 
-    text-align: left;
-    cursor: pointer;
     width: 300px; 
     height: 400px; 
-    margin: 15px;
-    padding: 10px;
-    border: 1px solid #ccc; 
-    border-radius: 8px; 
-    background-color: #f9f9f9; 
-    transition: transform 0.3s ease; 
+    margin: 15px; 
+    padding: 20px; 
+    background-color: #f8f9fa; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out; 
 }
 
 .member:hover {
