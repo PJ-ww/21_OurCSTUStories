@@ -151,12 +151,6 @@ main{
     font-style: italic;
 }
 
-@media (max-width: 768px) {
-    .members-container {
-        grid-template-columns: 1fr; 
-    }
-}
-
 form {
     margin:  20px auto;
     padding: 20px;
@@ -242,7 +236,58 @@ body {
 .title {
     text-align: center;
     margin-top: 20px;
-    font-size: 35px;
+    font-size: 3rem;
     font-weight: bold;
     color: #00778b;
+}
+
+.title2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00778b;
+}
+
+footer{
+    padding: 10px;
+    border: 1px solid white ;
+    background-color: #E6F1F6;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 16px;
+    margin: 2px;
+    font-family: "Nunito Sans", sans-serif;
+    text-align: center;
+    transition: transform 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+footer a:hover{
+    color: white;
+    background-color: #3d546d;
+    border-radius: 16px;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .members-container {
+        grid-template-columns: 1fr; 
+    }
+    header{
+        padding:100px;
+        background-image: url(resources/IMG_9301.jpg) ;
+        background-repeat:no-repeat;
+        background-size:cover;
+        display: block;
+        background-position: center;
+        height: 80px; 
+    }
 }
