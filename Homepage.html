@@ -94,42 +94,7 @@
         <tbody>
         </tbody>
     </table>
-    <script>
-        const form = document.getElementById('guestForm');
-        const guestTable = document.getElementById('guestTable').getElementsByTagName('tbody')[0];
-        const otherRadio = document.getElementById('other');
-        const otherGenderInput = document.getElementById('other_gender');
-
-        otherRadio.addEventListener('change', () => {
-            otherGenderInput.disabled = !otherRadio.checked;
-        });
-
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const studentId = document.getElementById('id').value;
-            let gender = document.querySelector('input[name="gender"]:checked').value;
-
-            if (gender === 'อื่นๆ') {
-                gender = otherGenderInput.value || 'ระบุไม่ครบ';
-            }
-            const faculty = document.getElementById('faculty').value;
-
-            const newRow = guestTable.insertRow();
-            newRow.innerHTML = `
-                <td>${name}</td>
-                <td>${email}</td>
-                <td>${studentId}</td>
-                <td>${gender}</td>
-                <td>${faculty}</td>
-            `;
-
-            form.reset();
-            otherGenderInput.disabled = true;
-        });
-    </script>
+    <script src="script.js"></script>
 
     <div id="members">
         <h2>Members</h2>
@@ -149,7 +114,7 @@
                 </div>
             </div>
             <div class="member">
-                <img src="resources/member 3.jpg"Member 3">
+                <img src="resources/member 3.jpg" alt="Member 3">
                 <div class="info">
                     <p class="name">นางสาวแพรพลอย พิพัฒน์ภาธรกุล<br>( แพรพลอย )</p>
                     <p class="id">6709650540</p>
