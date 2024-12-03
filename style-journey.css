@@ -50,6 +50,11 @@ header{
     height: 200px;
 }
 
+main{
+    background-color:#EBECE7 ;
+    border: 1px solid white ;
+}
+
 main h2{
     font-family: "Parkinsans", serif;
     text-align: center;
@@ -96,10 +101,6 @@ main h2{
     object-fit: cover;
 }
 
-.card:hover {
-    transform: scale(1.05);
-}
-
 .image-placeholder img {
     width: 100%;
     height: auto;
@@ -109,22 +110,27 @@ main h2{
 .container {  
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px ;
     box-sizing: border-box;
 }
 
 .card {
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px ;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     flex-direction: column;
     align-items: center;
     background: #f9f9f9; 
     transition: transform 0.3s ease; 
     margin-top: 16px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 .image-container img {
@@ -186,7 +192,7 @@ footer a:hover{
 }
 
 @media (max-width: 768px) {
-    .container {
+    .card-grid {
         grid-template-columns: 1fr; 
     }
     .card img {
