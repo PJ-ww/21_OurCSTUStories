@@ -172,6 +172,7 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form input[type="password"],
+form input[type="comment"],
 form select {
     width: 100%;
     padding: 8px;

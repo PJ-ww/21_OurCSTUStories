@@ -73,6 +73,9 @@
             <option value="วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์">วิทยาลัยพัฒนศาสตร์ป๋วยอึ๊งภากรณ์</option>
         </select><br><br>
     
+        <label for="comment">Comment: <b>*</b></label><br>
+            <input type="comment" name="comment" id="comment" size="45px" placeholder="Comment your idea" required><br><br>
+
             <input type="submit" value="Submit"><br>
         </fieldset>
     </form>
@@ -88,47 +91,13 @@
                 <th>รหัสนักศึกษา</th>
                 <th>เพศ</th>
                 <th>คณะ</th>
+                <th>คอมเม้น</th>
             </tr>
         </thead>
         <tbody>
         </tbody>
     </table>
-    <script>
-        const form = document.getElementById('guestForm');
-        const guestTable = document.getElementById('guestTable').getElementsByTagName('tbody')[0];
-        const otherRadio = document.getElementById('other');
-        const otherGenderInput = document.getElementById('other_gender');
-
-        otherRadio.addEventListener('change', () => {
-            otherGenderInput.disabled = !otherRadio.checked;
-        });
-
-        form.addEventListener('submit', (event) => {
-            event.preventDefault();
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const studentId = document.getElementById('id').value;
-            let gender = document.querySelector('input[name="gender"]:checked').value;
-
-            if (gender === 'อื่นๆ') {
-                gender = otherGenderInput.value || 'ระบุไม่ครบ';
-            }
-            const faculty = document.getElementById('faculty').value;
-
-            const newRow = guestTable.insertRow();
-            newRow.innerHTML = `
-                <td>${name}</td>
-                <td>${email}</td>
-                <td>${studentId}</td>
-                <td>${gender}</td>
-                <td>${faculty}</td>
-            `;
-
-            form.reset();
-            otherGenderInput.disabled = true;
-        });
-    </script>
+    <script src="script.js"></script>
 
     <div id="members">
         <h2>Members</h2>

@@ -13,7 +13,9 @@ form.addEventListener('submit', (event) => {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const studentId = document.getElementById('id').value;
+    const Yourcomment = document.getElementById('comment').value;
     let gender = document.querySelector('input[name="gender"]:checked').value;
+
     
     if (!/^\d{10}$/.test(studentId)) {
         alert("กรุณาใส่รหัสนักศึกษาเป็นตัวเลข 10 หลัก");
@@ -32,6 +34,7 @@ form.addEventListener('submit', (event) => {
         <td>${studentId}</td>
         <td>${gender}</td>
         <td>${faculty}</td>
+        <td>${Yourcomment}</td>
     `;
 
     form.reset();
